@@ -1,0 +1,97 @@
+
+body {
+    background-color: #f4f7f6;
+    font-family: "Gill Sans", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    color: #e67e22;
+    margin-top: 30px;
+}
+
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+.gif_meme:hover{
+    content: url("./img/main2.png")
+}
+ul, ol {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul { list-style-type: square; }
+ol { list-style-type: upper-roman; }
+
+dl {
+    background-color: #fdfdfd;
+    padding: 15px;
+    border: 2px black;
+}
+
+dt {
+    font-weight: bold;
+    color: #d35400;
+}
+
+dd {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.main_group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.group {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+
+#top {
+    font-size: 40px;
+}
