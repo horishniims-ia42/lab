@@ -31,10 +31,6 @@ a:hover {
     color: #c0392b;
     text-decoration: underline;
 }
-
-.gif_meme:hover{
-    content: url("./img/main2.png")
-}
 ul, ol {
     background-color: #ffffff;
     padding: 20px 40px;
@@ -94,4 +90,28 @@ table th, table td {
 
 #top {
     font-size: 40px;
+}
+
+/* --- task №4 --- */
+ul li a {
+    color: #16a085;
+    transition: 0.3s;
+}
+
+.group > p {
+    font-weight: bold;
+    color: #4c00ff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+h3 + ul {
+    border-top: 2px solid #e67e22;
+    margin-top: 10px;
+}
+
+dt + dd {
+    color: #7f8c8d;
+    border-left: 2px solid #d35400;
+    padding-left: 10px;
 }
