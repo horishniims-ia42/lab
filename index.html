@@ -5,6 +5,7 @@
     <meta name="author" content="Макс Горішній">
     <title>Home</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
     <style>
 
         a { color: #8e44ad; }
@@ -41,9 +42,35 @@
         <img src="./img/main1.jpg" alt="" width="1800px" height="900" srcset="">
         <img style="display:block"  src="./img/main2.jpg" alt="" width="1800px" height="900" srcset="">
         <img style="padding-top: 3px;"  src="./img/main3.jpg" alt="" width="1800px" height="900" srcset="">
+    </div>
+    <div style="margin: 40px auto; padding: 25px; background: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; border-radius: 8px;">
+        <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">Інтерактивні сервіси</h2>
+        
+        <script>
+            document.write("<div style='background-color: #c0392b; color: white; text-align: center; padding: 10px; margin-bottom: 20px; font-weight: bold;'>🔥 Обмежена пропозиція: Безкоштовне ТО при купівлі суперкара цього тижня! 🔥</div>");
+            function bookTestDrive() {
+                let isInterested = confirm("Бажаєте записатись на ексклюзивний тест-драйв?");
+                if(isInterested) {
+                    let clientName = prompt("Як до вас звертатися?", "Клієнт");
+                    if(clientName) {
+                        alert("Чудово, " + clientName + "! Ваш запит прийнято. Менеджер зв'яжеться з вами найближчим часом.");
+                    }
+                } else {
+                    alert("Шкода. Можливо, іншим разом!");
+                }
+            }
+        </script>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <button onclick="bookTestDrive()" style="padding: 10px; background: #2980b9; color: white; border: none; cursor: pointer;">Записатись на тест-драйв</button>
+            <button onclick="calculateCredit()" style="padding: 10px; background: #27ae60; color: white; border: none; cursor: pointer;">Розрахувати автокредит</button>
+            <button onclick="compareCarNames()" style="padding: 10px; background: #8e44ad; color: white; border: none; cursor: pointer;">Порівняти назви авто</button>
+            <button onclick="neonMode()" style="padding: 10px; background: #34495e; color: white; border: none; cursor: pointer;">Увімкнути неоновий режим (30с)</button>
+            <button onclick="goToContacts()" style="padding: 10px; background: #e67e22; color: white; border: none; cursor: pointer;">Перейти до контактів</button>
+            <button onclick="applyVipDiscount()" style="padding: 10px; background: #d35400; color: white; border: none; cursor: pointer;">Застосувати VIP-візуал сайту</button>
+            <button onclick="updatePromoSection()" style="padding: 10px; background: #c0392b; color: white; border: none; cursor: pointer;">Показати секретну акцію</button>
+            <button onclick="showDevInfo()" style="padding: 10px; background: #7f8c8d; color: white; border: none; cursor: pointer;">Про розробника сайту</button>
         </div>
-        <div id="footer">
-            <a href="#top">На головну</a>
-        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
